@@ -1,0 +1,22 @@
+body {
+    padding-bottom: 50px; /* adjust to footer height */
+}
+
+
+main{color: blue;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+h1{font-size: 24px;}
+
+footer {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
