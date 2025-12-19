@@ -1,0 +1,30 @@
+git --version
+git config --global user.name "Kumar Sanjay"
+git config --global user.email "testmail@mail.com"
+git config --list
+git init
+git add filename  # use . to add multiple files
+git status # to know the status in stagging area
+git commit -m "short discription of changes in commit"
+git log # know the status of commited logs with commit id and short- description that was added while commiting
+git checkout 84b4644c4534ee51bfc8bae9f7dce52f3dd15bf1 -- * 
+git checkout master -- *
+
+git restore index.html # restore the saved file(s) before stagging area to previous working version of file(s). use . for multiple files
+git diff --cached  # see the change before commiting from stagging area.
+git restore --staged filename  # restore the change from staging area to working area
+git restore --worktree index.html  # restore the changes done after git add in file but before commit
+git reset --soft HEAD^  #uncommit but keep changes 
+git reset --hard HEAD^  #uncommit but discard changes 
+git COMMIT_HASH:filename   # to see change done in that commit
+
+git log -p -2 # to see last twi commit
+git log --stat # similar to git log with additional feature about changes in files, insertion & deletion
+git log --pretty=oneline   # show commit hash and comment in one line
+git log --pretty=format:"%h - %an,%ar:%s"   # %h =1st 6 digit of hash, %an git name of user, %ar hours before, %s commit comment
+git log -S "changes"  # log related to some particular changes, show all details about it 
+git log --grep="fix bug"  # search commit msg
+git log --since="2025-12-19" 
+git log --until="2025-12-20" 
+git log --author="Kumar"
+git log --no-merges
