@@ -28,3 +28,22 @@ git log --since="2025-12-19"
 git log --until="2025-12-20" 
 git log --author="Kumar"
 git log --no-merges
+
+github reporsitory
+# create a new public reporsitory at your github
+git remote add origin https://github.com/sanjay493/git-test.git  # link local reporsitory to github reporsitory   git authentication may be required
+git branch -M main  # rename current branch to main
+
+git push -u origin main  # push local changes to github reporsitory
+
+git remote -v  # to see the linked reporsitory
+
+git push
+git pull
+git clone # to clone the remote reporsitory to local system
+
+git branch  # to see current branch
+git branch new-feature  # create new branch
+git checkout new-feature  # switch to new branch
+git merge new-feature  # merge new-feature branch to current branch
+git branch -d new-feature  # delete the branch after merging
